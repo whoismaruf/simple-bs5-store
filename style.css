@@ -1,3 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .slider-img > img {
     height: 60vh;
+}
+
+.cat-card {
+    cursor: pointer;
+}
+.cat-card > img {
+    height: 16vh;
+    transition: transform 0.4s ease-in-out;
+}
+.cat-card:hover > img {
+    transform: scale(1.2);
+}
+.product > img {
+    transition: transform 0.4s ease-in-out
+}
+.product:hover > img {
+    transform: scale(1.1);
+}
+.product {
+    background-color: rgba(199, 166, 21, 0.384);
+}
+
+
+@media only screen and (min-width: 350px) and (max-width: 699px){
+    .slider-img > img {
+        display: none;
+    }
 }
